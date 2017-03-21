@@ -1,0 +1,54 @@
+var indexOfSearch=[];
+
+function finIndexOfSeachedItem(searchString, str) {
+    var strLength=str.length;
+    var searchStringLength = searchString.length;
+
+    if(str.search(searchString) !== -1){
+      var index=str.search(searchString);
+      var last=(indexOfSearch[(indexOfSearch.length-1)]==null)?0:indexOfSearch[(indexOfSearch.length-1)];
+      indexOfSearch.push(index+last+1);
+      index += searchStringLength;
+      str=str.substr(index,strLength);
+      finIndexOfSeachedItem(searchString, str);
+    }else {
+       if(indexOfSearch.length == 0){
+         console.log('not found');
+       }
+    }
+    return indexOfSearch;
+}
+
+function markUpSearchedItems(arr,itemLength,str){
+  var arrLength = arr.length;
+  for(var i=0;i<arrLength;i++){
+    var firstIdx=parseInt(arr[i]);
+    var lastIdx=firstIdx+itemLength-1;
+    // str.substring(0, 3)
+    // $('p').html();
+    // $("p").html("Hello <b>world</b>!");
+    console.log(firstIdx+'-'+lastIdx);
+  }
+  // console.log(itemLength);
+}
+
+
+
+
+function bindEvent(){
+  $('input').keydown(function(event) {
+      if (event.keyCode == 13) {
+           var inputString=$("input").val();
+           var str= $('p').text();
+           indexOfSearch = [];
+           markUpSearchedItems(finIndexOfSeachedItem(inputString, str),inputString.length,str);
+         }
+     });
+
+}
+
+
+$(document).ready(function(){
+  bindEvent();
+
+});

@@ -1,0 +1,564 @@
+*{
+	font-family : cursive;
+}
+/******loading***/
+/* #overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+	z-index:100;
+	text-align:center;
+	background-color:white;
+    }
+#overlay img{
+	position : absolute;
+	top: 50%;
+	left: 50%;
+	height: 200px;
+	width: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+ } */
+ #overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,0.9);
+  transition: 1s 0.4s;
+}
+#progress{
+  height:1px;
+  background:#fff;
+  position:absolute;
+  width:0;
+  top:50%;
+}
+#progstat{
+  font-size:0.7em;
+  letter-spacing: 3px;
+  position:absolute;
+  top:50%;
+  margin-top:-40px;
+  width:100%;
+  text-align:center;
+  color:#fff;
+}
+/******* nav bar *********/			
+#nav-bar{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	}
+/*****corousel*********/	
+.carousel-inner > .item > img,.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+	height:350px;
+	}
+div.size{			  
+	position: absolute;				  
+	width: 70%;				  
+	height: 349px;				  
+	left: 50%;				  
+	margin: 0 auto;				  
+	margin-left: -35%;				  
+	top: 31%;
+		}
+/************* home *********/		
+#home {
+	 background: url('../image/download-white-wallpaper-hd-background-15640-wallpaper-hdwallsize.jpg') 50% 0 repeat fixed;
+	 min-height: 811px;
+	height: 796px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	background-size: cover;
+	}
+			 
+#home article {
+	height: 100px;
+	position: absolute;
+	text-align: center;
+	top: 96px;
+	width: 100%;
+	font-size: 50px;
+	color: #19334d;
+	font-weight: bold;
+	}
+			
+#home p {
+	height: 100px;
+	position: absolute;
+	text-align: center;
+	top: 174px;
+	width: 100%;
+	font-size: 38px;
+	color: #19334d;
+	margin: 0;
+	}
+/**-----------about---------------------*/			
+#about { 
+	background: url('../image/black-and-white-wallpaper-backgrounds-6.jpg') 50% 0 repeat fixed; min-height: 1000px; 
+	height: 1000px; 
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	background-size: cover;
+	}		 
+#about article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 115px;
+	width: 100%;
+	}
+#about img{
+	height:200px;
+	display:inline-block;
+	margin-top: 29px;
+	border: 2px solid;
+	border-radius: 5px;
+	}
+#desc-1{
+	font-size:30px;
+	}
+#description-1{
+	position:absolute;
+	width: 100%;
+	top: 645px;
+	}
+#description-1 div{
+	position:relative;
+	top: 58px;
+	}	
+#desc-2{
+	position:absolute;
+	font-family:15px;
+	height: auto;
+	width: 64%;
+	font-size: 20px;
+	top: 452px;
+	background: rgba(256,256,256,.7);
+	margin-left: -32%;
+	left: 50%;
+	font-weight: 600;
+	padding: 1%;
+	border-radius: 10px;
+	line-height: 1.5;
+	}
+/*--------about-next--------------*/	
+#about-next{ 
+	background: url('../image/shadow-wallpaper.jpg') 50% 0 repeat fixed; 
+	min-height: 1000px; 
+	height: 1000px; 
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	background-size: cover;
+	}
+#about-next h3{
+	margin:0;
+	text-align:center;
+	padding-top: 105px;
+	margin-bottom: 40px;
+	font-weight:bold;
+	font-size: 30px;
+	}
+#about-next p{
+	width: 70%;
+	background-color:white;
+	border-radius:10px;
+	font-size: 19px;
+	font-weight: 600;
+	position: absolute;
+	left: 50%;
+	margin-left: -35%;
+	margin-top: 25px;
+	padding: 1%;
+	margin-top: 60px;
+	line-height: 1.6;
+	}
+/*---------about-next-2--------------*/	
+#about-next-2{
+	background: url('../image/0zdY7l.jpg') 50% 0 repeat fixed; min-height: 1000px; 
+	height: 1000px; 
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	background-size: cover;
+	}	
+#about-next-2 h3{
+	margin:0;
+	text-align:center;
+	margin-bottom: 60px;
+	font-weight:bold;
+	background-color:grey;
+	position: absolute;
+	width: 50%;
+	left: 50%;
+	margin-left: -25%;
+	top: 50px;
+	padding: 2%;
+	color: white;
+	opacity: 0.9;
+	border-radius: 10px;
+	font-size: 23px;
+	}	
+#about-next-2 #DaimlerBenzCarImage{
+	position:absolute;
+	top: 170px;
+	width: 36%;
+	left: 50%;
+	margin-left: -18%;
+	border: 2px solid;
+	border-radius: 7px;
+	}
+#about-next-2 p{
+	position:absolute;
+	width: 80%;
+	left: 50%;
+	margin-left: -40%;
+	top: 430px;
+	background-color: rgba(256,256,256,0.9);
+	padding: 1%;
+	border-radius: 10px;
+	font-size: 19px;
+	font-weight: 600;
+	}
+#about-next-2 div{
+	position: absolute;
+	text-align:center;
+	left: 50%;
+	width: 100%;
+	margin-left: -50%;
+	top: 62%;
+	}
+#about-next-2 #img1,#about-next-2 #img2,#about-next-2 #img3{
+	height:250px;
+	width:30%;
+	margin-right:20px;
+	border: 1px solid;
+	border-radius: 7px;
+	}
+/*----------next-3-------*/			
+#about-next-3{
+	background: url('../image/White-Background-9B1.jpg') 50% 0 repeat fixed;
+	min-height: 1000px;
+	height: 1185px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	background-size: cover;
+	}
+#about-next-3 h3{				
+	padding: 4%;				
+	font-size: 30px;				
+	font-weight: bold;
+	}
+#about-next-3 p{
+	position:absolute;
+	width: 80%;
+	left: 50%;
+	margin-left: -40%;
+	font-size: 20px;
+	margin-top: 72px;
+	font-weight: 600;
+	line-height: 1.5;
+	}
+#about-next-3-img2{
+	position:absolute;
+	left: 50%;
+	margin-left: -25%;
+	width: 50%;
+	top: 56%;
+	border-radius: 5px;
+	}
+#about-next-3-img2-desc{
+	position:absolute;
+	font-size: 17px;
+	left: 50%;
+	margin-left: -16%;
+	width: 32%;
+	top: 57%;
+	color: white;
+	}
+#about-next-3-img1{
+	width:50%;
+	border-radius: 7px;
+	}
+/*-------next-4------------*/			
+#about-next-4{
+	background: url('../image/2880x1800-fire-engine-red-solid-color-background.jpg') 50% 0 repeat fixed;
+	min-height: 860px;
+	height: 860px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	 background-size: cover;
+	}
+#about-next-4-title{
+	padding: 1%;
+	font-size: 35px;
+	font-weight: bolder;
+	padding-top: 65px;
+	color:white;
+	}
+#about-next-4-img1{
+	height:250px;
+	}
+#about-next-4-h6{			
+	font-size: 25px;				
+	color: antiquewhite;				
+	font-weight: 600;				
+	text-align: center;
+	}
+#about-next-4 h1{
+	text-align:center;
+	}
+#about-next-4 h1 img{
+	width:25%;
+	}
+/*---------next-5-----------*/			
+#about-next-5{
+	background: url('../image/blue-wallpaper-36.jpg') 50% 0 repeat fixed;
+	min-height: 860px;
+	height: 860px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	background-size: cover;
+	}
+#about-next-5 h3{
+	text-align:center;
+	margin:0;
+	color:white;
+	font-size:35px;
+	font-weight:bold;
+	padding-top: 50px;
+	}
+#about-next-5 h1{
+	text-align:center;
+	}
+#about-next-5 h1 img{
+	width: 44%;
+	}
+#about-next-5 h4 img{
+	width:25%;
+	margin:1%;
+	}
+#about-next-5 h4 {
+	text-align:center;
+	}
+#about-next-5 h2 {
+	text-align:center;
+	color: white;			
+	}
+/*--------footer------*/	
+footer{
+	height:100px;
+	background-color:#002233;
+	}
+#logo-div img{
+	height:50px;
+	width:50px;
+	border-radius:5px;
+	margin-top: 12%;
+	margin-right: 18px;
+	}
+footer li{
+	list-style-type:none;
+	display:inline-block;
+	margin-right: 30px;
+	color: grey;
+	font-size: 19px;
+	}
+footer ul{
+	display:inline-block;
+	margin-top: 3%;
+	}
+/****************** start of media query********************** */
+@media only screen and (max-width: 768px) {
+	/*-----corousel-----------*/
+	.carousel-inner > .item > img,.carousel-inner > .item > a > img {
+		width: 80%;
+		height: 300px;
+		}
+	div.size{
+		height: 300px;
+		}
+	/*------------home-------------*/
+	#home {
+		 min-height: 653px;
+		 height: 666px;
+		}			 
+	#home article {
+		top: 84px;
+		font-size: 43px;
+		}			
+	#home p {
+		top: 135px;
+		font-size: 34px;
+		}
+/*-----------about---------------*/		
+	#about {
+		min-height: 863px;
+		height: 893px;
+		}		 
+	#about article {
+		top: 71px;
+		}
+	#desc-1{
+		font-size: 26px;
+		font-weight: 600;
+		}
+	#description-1{
+		top: 538px;
+		background-color: rgba(255,255,255,0.7);
+		}
+	#description-1 div{
+		top: 63px;
+		}	
+	#desc-2{
+		font-size: 14px;
+		top: 380px;
+		margin-left: -35%;
+		font-weight: 600;
+		border-radius: 10px;
+		width: 70%;
+		}
+/*-------------------about-next-----------------*/	
+	#about-next{
+		background: url('../image/A4OHl6.jpg') 50% 0 repeat fixed;
+		min-height: 871px;
+		height: 880px;
+		max-width: 1920px;
+		}
+	#about-next h3{
+		padding-top: 50px;
+		color: white;
+		}
+	#about-next p{
+		width: 74%;
+		font-size: 14px;
+		font-weight: 600;
+		margin-left: -37%;
+		margin-top: 25px;
+		margin-top: 49px;
+		}
+/*----about-next-2------------*/	
+	#about-next-2{
+		min-height: 906px;
+		height: 877px;
+		}	
+	#about-next-2 h3{
+		margin-bottom: 60px;
+		width: 56%;
+		margin-left: -28%;
+		top: 50px;
+		padding: 2%;
+		border-radius: 10px;
+		font-size: 18px;
+		}	
+	#about-next-2 #DaimlerBenzCarImage{
+		top: 155px;
+		width: 40%;
+		margin-left: -20%;
+		border-radius: 7px;
+	}
+	#about-next-2 p{
+		width: 80%;
+		margin-left: -40%;
+		top: 348px;
+		padding: 1%;
+		border-radius: 10px;
+		font-size: 14px;
+		}
+	#about-next-2 div{
+		left: 51%;
+		margin-left: -50%;
+		top: 58%;
+		}
+	#about-next-2 #img1,#about-next-2 #img2,#about-next-2 #img3{
+		height: 217px;
+		width: 30%;
+		margin-right: 16px;
+		border-radius: 5px;
+		}
+/*--------next-3-----------*/	
+	#about-next-3{
+		min-height: 808px;
+		height: 780px;
+			}
+	#about-next-3 h3{
+		font-size: 23px;
+		}
+	#about-next-3 p{
+		left: 50%;
+		font-size: 16px;
+		margin-top: 72px;
+		}
+	#about-next-3-img2{
+		top: 61%;
+		border-radius: 5px;
+		}
+	#about-next-3-img2-desc{
+		font-size: 14px;
+		top: 62%;
+		}
+/*-------next-4------------*/			
+	#about-next-4{
+		min-height: 681px;
+		height: 687px;
+		}
+	#about-next-4-title{
+		font-size: 24px;
+		padding-top: 55px;
+		}
+	#about-next-4-img1{
+		height:250px;
+		}
+	#about-next-4-h6{
+		font-size: 23px;
+		}
+	#about-next-4 h1 img{
+		width: 28%;
+				}	
+/*-----------next-5-----------*/
+	#about-next-5{
+		min-height: 713px;
+		height: 684px;
+		}
+	#about-next-5 h3{			
+		font-size: 32px;
+		padding-top: 50px;
+		}
+	#about-next-5 h4 {
+		margin-top: 55px;
+		}
+	#about-next-5 h2 {
+		font-size: 27px;
+		}			
+	}
+				
